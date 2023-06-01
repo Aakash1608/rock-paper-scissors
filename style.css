@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inconsolata', monospace;
+    background-image: linear-gradient(to right, rgb(30, 148, 211), rgba(4, 225, 229, 0.7));
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.pregame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 180px;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(30, 160, 211);
+    border: 0.5px white solid;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+.btn:hover {
+    background-color: rgba(4, 225, 229, 0.7);
+}
+
+.during-game {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.game-board{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.choices img {
+    margin: 30px 20px 80px 20px;
+}
+.computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100px;
+}
+.choicesComp {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.choicesComp img {
+    margin: 30px 20px 120px 20px;
+}
+.vanish {
+    display: none;
+}
+.post-game {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin: 100px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 480px){
+    h1{
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .pregame {
+        text-align: center;
+    }
+    img {
+        width: 20vw;
+    }
+}
+@media(max-width: 720px){
+    .game-board{
+        flex-direction: column;
+    }
+    .player {
+        margin-bottom: 40px;
+    }
+    img {
+        width: 80px;
+    }
+    .choicesComp img {
+        margin: 30px 20px 80px 20px;
+    }
+}
+@media (max-width: 300px){
+    img {
+        width: 18vw;
+    }
+}
