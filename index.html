@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <main>
+        <div class="pregame">
+            <h1>PLAY ROCK PAPER SCISSORS</h1>
+            <button class="btn" id="start-btn">Start The Game</button>
+        </div>
+        <div class="during-game">
+            <h1>Round: <span id="round">1</span></h1>
+            <div class="game-board">
+                <div class="player">
+                    <h2>Choose Any One</h2>
+                    <div class="choices">
+                        <img src="./static/rock.svg" alt="rock" id="rock">
+                        <img src="./static/scissors.svg" alt="scissor" id="scissor">
+                        <img src="./static/paper.svg" alt="paper" id="paper">
+                    </div>
+                    <div class="player-score">
+                        <h2>Score : <span id="p-score">0</span></h2>
+                    </div>
+                </div>
+                <div class="computer">
+                    <h2>Choosing</h2>
+                    <div class="choicesComp">
+                        <img src="./static/tick.png" alt="rock" id="changingImg">
+                    </div>
+                    <div class="comp-score">
+                        <h2>Score : <span id="c-score">0</span></h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="post-game">
+            <h1 id="msg">Congo! You Won The Game</h1>
+            <h1 id="final-score"></h1>
+            <button class="btn" id="playagain-btn">Play Again</button>
+            <button class="btn" id="home-btn">Home</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
